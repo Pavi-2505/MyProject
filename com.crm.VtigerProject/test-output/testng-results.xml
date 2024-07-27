@@ -1,40 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="3" total="7" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="3" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-24T14:23:55 CEST" name="Default suite" finished-at="2024-07-24T14:24:25 CEST" duration-ms="29967">
+  <suite started-at="2024-07-26T17:38:52 CEST" name="Default suite" finished-at="2024-07-26T17:39:32 CEST" duration-ms="39880">
     <groups>
-      <group name="regTest">
-        <method signature="CreatContactTest.creatContactTest()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" name="creatContactTest" class="com.crm.contacts.CreatContactTest"/>
-      </group> <!-- regTest -->
-      <group name="smokeTest">
-        <method signature="CreatContactTest.creatContactTest()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" name="creatContactTest" class="com.crm.contacts.CreatContactTest"/>
-      </group> <!-- smokeTest -->
+      <group name="smoke">
+        <method signature="CreateOrganisationTest.createOrganisationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" name="createOrganisationTest" class="com.crm.Organisation.CreateOrganisationTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-07-24T14:23:55 CEST" name="Default test" finished-at="2024-07-24T14:24:25 CEST" duration-ms="29967">
-      <class name="com.crm.contacts.CreatContactTest">
-        <test-method is-config="true" signature="connectDB()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:23:55 CEST" name="connectDB" finished-at="2024-07-24T14:23:55 CEST" duration-ms="11" status="PASS">
+    <test started-at="2024-07-26T17:38:52 CEST" name="Default test" finished-at="2024-07-26T17:39:32 CEST" duration-ms="39880">
+      <class name="com.crm.Organisation.CreateOrganisationTest">
+        <test-method is-config="true" signature="connectDB()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:38:52 CEST" name="connectDB" finished-at="2024-07-26T17:38:52 CEST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectDB -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:23:55 CEST" name="launchBrowser" finished-at="2024-07-24T14:23:58 CEST" duration-ms="3365" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:38:52 CEST" name="launchBrowser" finished-at="2024-07-26T17:38:58 CEST" duration-ms="5907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:23:58 CEST" name="logintoApp" finished-at="2024-07-24T14:24:00 CEST" duration-ms="2054" status="PASS">
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:01 CEST" name="logintoApp" finished-at="2024-07-26T17:39:03 CEST" duration-ms="2044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoApp -->
-        <test-method retried="true" signature="creatContactTest()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:00 CEST" name="creatContactTest" finished-at="2024-07-24T14:24:05 CEST" duration-ms="4130" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="createOrganisationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:03 CEST" name="createOrganisationTest" data-provider="organizationDetails" finished-at="2024-07-26T17:39:03 CEST" duration-ms="14" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amazon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.amazon.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Plus]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[amazon@gmai.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Banking]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9.19677672235E11]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9.684821360361E12]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[236612.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[amazon@outlook.com]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at com.crm.contacts.CreatContactTest.creatContactTest(CreatContactTest.java:30)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.crm.Vtiger.genericUtilities.WebdriverUtility.click(WebdriverUtility.java:52)
+at com.crm.Organisation.CreateOrganisationTest.createOrganisationTest(CreateOrganisationTest.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -63,34 +124,98 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatContactTest -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:05 CEST" name="logoutFromApp" finished-at="2024-07-24T14:24:06 CEST" duration-ms="1165" status="PASS">
+        </test-method> <!-- createOrganisationTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:03 CEST" name="logoutFromApp" finished-at="2024-07-26T17:39:05 CEST" duration-ms="2541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:06 CEST" name="logintoApp" finished-at="2024-07-24T14:24:07 CEST" duration-ms="1703" status="PASS">
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:05 CEST" name="logintoApp" finished-at="2024-07-26T17:39:07 CEST" duration-ms="1866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoApp -->
-        <test-method retried="true" signature="creatContactTest()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:07 CEST" name="creatContactTest" finished-at="2024-07-24T14:24:11 CEST" duration-ms="3435" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="createOrganisationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:07 CEST" name="createOrganisationTest" data-provider="organizationDetails" finished-at="2024-07-26T17:39:07 CEST" duration-ms="9" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CTS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.cts.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Flower]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[300.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cts@gmai.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Education]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9.19677672236E11]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9.684821360362E12]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[236613.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[cts@outlook.com]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Coimbatore]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at com.crm.contacts.CreatContactTest.creatContactTest(CreatContactTest.java:30)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.crm.Vtiger.genericUtilities.WebdriverUtility.click(WebdriverUtility.java:52)
+at com.crm.Organisation.CreateOrganisationTest.createOrganisationTest(CreateOrganisationTest.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -113,34 +238,98 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatContactTest -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:11 CEST" name="logoutFromApp" finished-at="2024-07-24T14:24:12 CEST" duration-ms="1028" status="PASS">
+        </test-method> <!-- createOrganisationTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:07 CEST" name="logoutFromApp" finished-at="2024-07-26T17:39:10 CEST" duration-ms="2877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:12 CEST" name="logintoApp" finished-at="2024-07-24T14:24:14 CEST" duration-ms="1767" status="PASS">
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:10 CEST" name="logintoApp" finished-at="2024-07-26T17:39:12 CEST" duration-ms="1656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoApp -->
-        <test-method retried="true" signature="creatContactTest()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:14 CEST" name="creatContactTest" finished-at="2024-07-24T14:24:17 CEST" duration-ms="3504" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="createOrganisationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:12 CEST" name="createOrganisationTest" data-provider="organizationDetails" finished-at="2024-07-26T17:39:12 CEST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TCS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.tcs.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Heart]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[tcs@gmai.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Communications]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9.19677672237E11]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9.684821360362E12]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[236614.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[tcs@outlook.com]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at com.crm.contacts.CreatContactTest.creatContactTest(CreatContactTest.java:30)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.crm.Vtiger.genericUtilities.WebdriverUtility.click(WebdriverUtility.java:52)
+at com.crm.Organisation.CreateOrganisationTest.createOrganisationTest(CreateOrganisationTest.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -163,34 +352,66 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatContactTest -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:17 CEST" name="logoutFromApp" finished-at="2024-07-24T14:24:18 CEST" duration-ms="1004" status="PASS">
+        </test-method> <!-- createOrganisationTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:12 CEST" name="logoutFromApp" finished-at="2024-07-26T17:39:15 CEST" duration-ms="3644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:18 CEST" name="logintoApp" finished-at="2024-07-24T14:24:20 CEST" duration-ms="1787" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintoApp -->
-        <test-method signature="creatContactTest()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:20 CEST" name="creatContactTest" finished-at="2024-07-24T14:24:24 CEST" duration-ms="3606" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:15 CEST" name="logintoApp" finished-at="2024-07-26T17:39:25 CEST" duration-ms="10051" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ef4f87ec8a8a76ae64183575148cb37, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50808/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ef4f87ec8a8a76ae64183575148cb37]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at com.crm.contacts.CreatContactTest.creatContactTest(CreatContactTest.java:30)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ef4f87ec8a8a76ae64183575148cb37, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50808/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ef4f87ec8a8a76ae64183575148cb37
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at com.crm.Vtiger.ObjectRepository.LoginPage.loginToAppln(LoginPage.java:38)
+at com.crm.Vtiger.genericUtilities.Baseclass.logintoApp(Baseclass.java:77)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -213,23 +434,311 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatContactTest -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:24 CEST" name="logoutFromApp" finished-at="2024-07-24T14:24:25 CEST" duration-ms="964" status="PASS">
+        </test-method> <!-- logintoApp -->
+        <test-method signature="createOrganisationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:25 CEST" name="createOrganisationTest" data-provider="organizationDetails" finished-at="2024-07-26T17:39:25 CEST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Infosys]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.infosys.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Leaf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[250.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[infosys@gmai.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Energy]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9.19677672238E11]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9.684821360363E12]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[236615.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[infosys@outlook.com]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Trivandrun]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Kerala]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ef4f87ec8a8a76ae64183575148cb37, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50808/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ef4f87ec8a8a76ae64183575148cb37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ef4f87ec8a8a76ae64183575148cb37, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50808/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ef4f87ec8a8a76ae64183575148cb37
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at com.crm.Vtiger.ObjectRepository.LoginPage.loginToAppln(LoginPage.java:38)
+at com.crm.Vtiger.genericUtilities.Baseclass.logintoApp(Baseclass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganisationTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:25 CEST" name="logoutFromApp" finished-at="2024-07-26T17:39:26 CEST" duration-ms="1078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:25 CEST" name="closebrowser" finished-at="2024-07-24T14:24:25 CEST" duration-ms="373" status="PASS">
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:26 CEST" name="logintoApp" finished-at="2024-07-26T17:39:28 CEST" duration-ms="1825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApp -->
+        <test-method signature="createOrganisationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:28 CEST" name="createOrganisationTest" data-provider="organizationDetails" finished-at="2024-07-26T17:39:28 CEST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Capgemini]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.capgemini.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tree]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[150.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[capgemini@gmai.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Finance]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9.19677672239E11]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9.684821360363E12]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[236616.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[capgemini@outlook.com]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ef4f87ec8a8a76ae64183575148cb37, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50808/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ef4f87ec8a8a76ae64183575148cb37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ef4f87ec8a8a76ae64183575148cb37, findElement {using=name, value=user_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50808/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ef4f87ec8a8a76ae64183575148cb37
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at com.crm.Vtiger.ObjectRepository.LoginPage.loginToAppln(LoginPage.java:38)
+at com.crm.Vtiger.genericUtilities.Baseclass.logintoApp(Baseclass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganisationTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:28 CEST" name="logoutFromApp" finished-at="2024-07-26T17:39:32 CEST" duration-ms="3755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:32 CEST" name="closebrowser" finished-at="2024-07-26T17:39:32 CEST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:com.crm.contacts.CreatContactTest@43bc63a3]" started-at="2024-07-24T14:24:25 CEST" name="closeDB" finished-at="2024-07-24T14:24:25 CEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:com.crm.Organisation.CreateOrganisationTest@3571b748]" started-at="2024-07-26T17:39:32 CEST" name="closeDB" finished-at="2024-07-26T17:39:32 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- com.crm.contacts.CreatContactTest -->
+      </class> <!-- com.crm.Organisation.CreateOrganisationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -50,7 +50,6 @@ public class CreateContactWithOrganisationTest extends Baseclass{
 		wLib.click(homepage.getOrganizationsLink());
 		createOrgImgPage.getCreateOrgLkpImg().click();
 		
-		createOraganizationPage.createOrganization(orgName);
 		String createdOrgName = VerifyOrganizationPage.getVerifyOrglink().getText();
 
 		if (createdOrgName.contains(orgName)) {
