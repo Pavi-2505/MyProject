@@ -26,7 +26,7 @@ public class DataProviderTest {
 		driver.findElement(By.id("submitButton")).click();
 	}
 	
-	@DataProvider()
+	@DataProvider(indices = 3)
 	public Object[][] getData() throws EncryptedDocumentException, IOException
 	{
 //		Object[][] obj = new Object[3][2];

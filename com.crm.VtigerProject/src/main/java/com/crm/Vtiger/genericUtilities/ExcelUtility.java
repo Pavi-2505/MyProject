@@ -16,6 +16,7 @@ public class ExcelUtility {
 
 	/**
 	 * This method is used to read data from excel
+	 * 
 	 * @param sheetName
 	 * @param rowNo
 	 * @param cellNo
@@ -23,20 +24,21 @@ public class ExcelUtility {
 	 * @throws EncryptedDocumentException
 	 * @throws IOException
 	 */
-	public String readDatafRomExcel(String sheetName,int rowNo,int cellNo) throws EncryptedDocumentException, IOException
-	{
+	public String readDatafRomExcel(String sheetName, int rowNo, int cellNo)
+			throws EncryptedDocumentException, IOException {
 		FileInputStream fis = new FileInputStream(IPathConstants.excelpath);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		//Workbook wb = WorkbookFactory.create(fis);
+		// Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(sheetName);
 		Row row = sh.getRow(rowNo);
 		Cell cell = row.getCell(cellNo);
-		String data=cell.toString();
+		String data = cell.toString();
 		return data;
 	}
-	
+
 	/**
 	 * this method is used to write data back to excel
+	 * 
 	 * @param Sheetname
 	 * @param rowno
 	 * @param cellNo
@@ -44,8 +46,8 @@ public class ExcelUtility {
 	 * @throws EncryptedDocumentException
 	 * @throws IOException
 	 */
-	public void writeDataToExcel(String Sheetname,int rowno,int cellNo,String data) throws EncryptedDocumentException, IOException
-	{
+	public void writeDataToExcel(String Sheetname, int rowno, int cellNo, String data)
+			throws EncryptedDocumentException, IOException {
 		FileInputStream fis = new FileInputStream(IPathConstants.excelpath);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(Sheetname);
@@ -56,7 +58,7 @@ public class ExcelUtility {
 		wb.write(fout);
 		wb.close();
 	}
-	
+
 	/**
 	 * This method is used to get the row count in a Sheet
 	 * @param Sheetname
@@ -73,5 +75,23 @@ public class ExcelUtility {
 		Sheet sh = wb.getSheet(Sheetname);
 		int count = sh.getLastRowNum();
 		return count;
-	}
+	}  
 }
+/*
+*//**
+	 * This method is used to get the column count in a Sheet
+	 * 
+	 * @param Sheetname
+	 * @param rowno
+	 * @param cellNo
+	 * @return
+	 * @throws EncryptedDocumentException
+	 * @throws IOException
+	 */
+/*
+ * public int getThecolumnCount(String Sheetname) throws
+ * EncryptedDocumentException, IOException { FileInputStream fis = new
+ * FileInputStream(IPathConstants.excelpath); Workbook wb =
+ * WorkbookFactory.create(fis); Sheet sh = wb.getSheet(Sheetname); int rowCount
+ * = sh.getLastRowNum(); rowCount. return count; } }
+ */

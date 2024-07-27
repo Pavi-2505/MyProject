@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.contacts.CreatContactTest">
+      <class name="com.crm.Organisation.CreateOrganisationTest">
         <methods>
           <include name="logoutFromApp"/>
           <include name="closebrowser"/>
           <include name="closeDB"/>
-          <include name="creatContactTest"/>
+          <include name="createOrganisationTest" invocation-numbers="0 1 2"/>
           <include name="launchBrowser"/>
-          <include name="logintoApp"/>
           <include name="connectDB"/>
+          <include name="logintoApp"/>
         </methods>
-      </class> <!-- com.crm.contacts.CreatContactTest -->
+      </class> <!-- com.crm.Organisation.CreateOrganisationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
