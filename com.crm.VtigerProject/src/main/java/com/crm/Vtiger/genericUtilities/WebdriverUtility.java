@@ -86,10 +86,10 @@ public class WebdriverUtility {
 	/**
 	 * This utility is for send the keys to element
 	 * @param element
-	 * @param value
+	 * @param employees
 	 */
-	public void sendData(WebElement element, String value) {
-		element.sendKeys(value);
+	public void sendData(WebElement element, String employees) {
+		element.sendKeys(employees);
 	}
 
 	/**
