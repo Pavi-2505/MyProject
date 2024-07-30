@@ -17,4 +17,10 @@ public class Sample1Test extends Baseclass{
 	{
 		System.out.println("hi");
 	}
+	
+	@Test
+	public void demo2Test()
+	{
+		System.out.println("Bye");
+	}
 }
